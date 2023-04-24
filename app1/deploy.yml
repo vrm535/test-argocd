@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: busybox
-  name: busybox
+    app: nginx
+  name: nginx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: busybox
+      app: nginx
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: busybox
+        app: nginx
     spec:
       containers:
-      - image: busybox
-        name: busybox
+      - image: nginx
+        name: nginx
         resources: {}
 status: {}
